@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: ivory;
+    color: #333333;
+    font-size: 18px;
+}
+
+section {
+    background-color: #f7c6dc;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
