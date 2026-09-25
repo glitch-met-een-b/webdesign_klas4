@@ -9,7 +9,7 @@ Bij deze repository horen:
 
 ## Leerlinggegevens
 
-Naam:  
+Naam:  Tessa
 Klas:
 
 ## Aan de slag
