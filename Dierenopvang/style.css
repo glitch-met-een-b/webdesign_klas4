@@ -9,11 +9,6 @@ h1 {
 p {
     font-size: 17px;
 }
-header { grid-area: activiteiten; }
-menu { grid-area: adopteren; }
-main { grid-area: contact; }
-right { grid-area: dieren; }
-footer { grid-area: dierenoverzicht; }
 
 .grid-container {
   display: grid;
@@ -32,3 +27,49 @@ footer { grid-area: dierenoverzicht; }
   padding: 20px 0;
   font-size: 30px;
 }
+body {
+ display: grid;
+ min-height: 100vh;
+ grid-template-columns: 250px auto;
+ grid-template-rows: 100px 50px auto 50px;
+ grid-template-areas:
+ "header header"
+ "nav main"
+ "aside main"
+ "footer footer";
+}
+header {
+ grid-area: header;
+}
+nav {
+ grid-area: nav;
+}
+aside {
+ grid-area: sidebar;
+}
+main {
+ grid-area: main;
+}
+footer {
+ grid-area: footer;
+av ul {
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+}
+nav a {
+ color: red;
+}
+nav a:hover {
+ background-color: green;
+}
+nav a:focus {
+ color: blue;
+}
+nav a:active {
+ background-color: gray;
+}
+av ul {
+ flex-direction: row;
+ gap: 20px;
+} 
