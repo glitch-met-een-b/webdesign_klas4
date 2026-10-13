@@ -34,7 +34,7 @@ body {
  grid-template-rows: 100px 50px auto 50px;
  grid-template-areas:
  "header header"
- "nav main"
+ "nav nav"
  "aside main"
  "footer footer";
 }
@@ -45,31 +45,34 @@ nav {
  grid-area: nav;
 }
 aside {
- grid-area: sidebar;
+ grid-area: aside;
 }
 main {
  grid-area: main;
 }
 footer {
  grid-area: footer;
-av ul {
- display: flex;
- flex-direction: row;
- gap: 20px;
 }
-nav a {
- color: red;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
-nav a:hover {
- background-color: green;
+
+nav ul li {
+  float: left;
 }
-nav a:focus {
- color: blue;
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-nav a:active {
- background-color: gray;
+
+nav ul li a:hover {
+  background-color: #111111;
 }
-av ul {
- flex-direction: row;
- gap: 20px;
-} 
